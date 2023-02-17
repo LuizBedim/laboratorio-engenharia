@@ -13,18 +13,14 @@
             dado = prompt("Informe o número desejado: ");
             dado = parseInt(dado);
 
-        } while (isNaN(dado) || dado <= 0 || numeroPrimo(dado) == false);
-        alert("O número é primo " + dado);
+        } while (isNaN(dado) || dado <= 0);
 
-        function numeroPrimo(dado) {
-        for (var i = 2; i < dado; i++) {
-            if(dado % i === 0) {
-                return false;
-                }
-            }
-            return dado !== 1;  
+        if(dado % 2 === 0) {
+            alert("O número é par");
+        } else {
+            alert("O número é impar");
         }
-
+        
     </script>
 </head>
 
