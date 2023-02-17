@@ -10,11 +10,20 @@
 
         let dado;
         do {
-            dado = prompt("Informe o número desejado: ", "");
+            dado = prompt("Informe o número desejado: ");
             dado = parseInt(dado);
 
-      } while (isNaN(dado) || dado <= 0 || isPrime(dado) != false);
-      alert("O número é primo " + dado);
+        } while (isNaN(dado) || dado <= 0 || numeroPrimo(dado) == false);
+        alert("O número é primo " + dado);
+
+        function numeroPrimo(dado) {
+        for (var i = 2; i < dado; i++) {
+            if(dado % i === 0) {
+                return false;
+                }
+            }
+            return dado !== 1;  
+        }
 
         // let idade;
         // do{     
