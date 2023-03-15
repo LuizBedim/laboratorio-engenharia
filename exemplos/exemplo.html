@@ -5,11 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <script>
+        // let cars = ["Honda", "Volvo", "BMW"];
+        // console.log(cars[0]);
+        // console.log(cars);
+    
+        // let pessoa = new Array ("Luiz", "Bedim", 19);
+
+        // ===== Objeto literal =====
+        /*
+        let pessoa = {
+            primeiroNome:"Luiz",
+            sobreNome:"Bedim",
+            idade:19
+        };
+    
+        console("Nome: " + pessoa.primeiroNome);
+        pessoa.primeiroNome = "João";
+        */
+
+        // ===== Função Splice =====
+        /*
+        let frutas = ["Uva", "Maçã", "Banana"];
+        console.log(frutas);
+        delete frutas[0];
+        console.log(frutas);
+    
+        frutas.splice(1, 0, "Limão", "kiwo");
+        console.log(frutas);
+        */
+
+    </script>
 </head>
 <body>
-    <form>
-        <input type="button" value="Botão" id="meuBotao">
-    </form>
+    <p>Meu parágrafo</p>
+    <button onclick="myFunction()">Try it</button>
+
+    <script>
+        // ===== Alterar elemento de texto HTML =====
+        function myFunction() {
+            let e = document.createElement("P");
+            let t = document.createTextNode("Novo parágrafo");
+            e.appendChild(t);
+            document.body.appendChild(e);
+        }
+
+        // function myFunction() {
+        //     let e = document.createElement("P");
+        //     let t = document.createTextNode("Novo parágrafo");
+        //     e.appendChild(t);
+        //     e.setAttribute("id", "meuParagrafo");
+        //     e.setAttribute("style", "font-size: 20; text-align: center;");
+        // }
+
+        function Pessoa () {
+            let nome;
+            this.setNome = function(vNome) {
+                this.nome = vNome;
+            }
+            this.getNome = function() {
+                return this.nome;
+            }
+            function sobreNome(){
+                return "oi";
+            }
+        }
+
+        let p1 = new Pessoa();
+        p1.setNome("Luiz");
+        console.log(p1.getNome());
+
+        // Acessa pois nome não é private
+        let p2 = new Pessoa();
+        p2.nome = "João";
+        console.log(p2.sobreNome());
+    </script>
 </body>
 </html>
