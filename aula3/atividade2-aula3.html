@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <form>
-        <label>
-            <input>
-        </label>
-        <label>
-            <input>
-        </label>
-        <label>
-            <input>
-        </label>
-        <label>
-            <input>
-        </label>
-        <label>
-            <input>
-        </label>
-        <label>
-            <input>
-        </label>
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" name="marca"><br>
+
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" name="modelo"><br>
+
+        <label for="cor">Cor:</label>
+        <input type="text" id="cor" name="cor"><br>
+
+        <label for="ano">Ano:</label>
+        <input type="text" id="ano" name="ano"><br>
+
+        <label for="kilometragem">Quilometragem:</label>
+        <input type="text" id="kilometragem" name="kilometragem"><br>
+
+        <label for="valor_fipe">Valor FIPE:</label>
+        <input type="text" id="valor_fipe" name="valor_fipe"><br>
+
+        <input type="button" id="botao" value="Calcular">
     </form>
+
+    <p>Marca: <span id="marca-exibir"></span></p>
+    <p>Cor: <span id="cor-exibir"></span></p>
+    <p>Modelo: <span id="modelo-exibir"></span></p>
+    <p>Ano: <span id="ano-exibir"></span></p>
+    <p>Utilização (em anos): <span id="utilizacao"></span></p>
+    <p>Valor de mercado: R$ <span id="valor_mercado"></span></p>
+    <br>
+    <a href="index-aula3.html">Voltar</a>
 
     <script src="../assets/js/js-aula1/script2-aula3.js"></script>
 </body>
+
 </html>
