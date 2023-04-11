@@ -141,7 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 const lattes = document.createElement('input');
                 lattes.type = 'text';
-                lattes.placeholder = 'Lattes';
                 lattes.addEventListener('blur', () => {
                     professor.setLattes(lattes.value);
                 });

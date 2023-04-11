@@ -14,7 +14,8 @@
 
     flex-direction: column;
 
-    background-image: linear-gradient(to right top, #051937, #222150, #472363, #721d6e, #9d006e);
+    /* background-image: linear-gradient(to right top, #051937, #222150, #472363, #721d6e, #9d006e); */
+    background-color: #222150;
 }
 
 .container-main form {

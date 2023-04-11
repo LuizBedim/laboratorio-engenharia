@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+.root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    /* background-image: linear-gradient(to right top, #051937, #222150, #472363, #721d6e, #9d006e); */
+    background-color: #222150;
+}
